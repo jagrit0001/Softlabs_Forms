@@ -80,7 +80,7 @@ window.onload = function () {
             .then(data => {
                 if (data.result === "success") {
                     // Redirect to the success page
-                    window.location.href = "Form_submit.html";  // Change to your desired page
+                    window.location.href = "https://jagrit0001.github.io/Softlabs_Forms/Form_submit.html";  // Change to your desired page
                 } else {
                     alert("There was an error with your submission.");
                 }
