@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Softlabs Feedback Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style5.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="https://www.softlabs.com.au/wp-content/uploads/2024/05/Logo_SL-amp-LGP.png" alt="Softlabs" width="400">
+                </div>
+            </div>
+            <form id="feedbackForm" action="https://script.google.com/macros/s/AKfycbx1rR1A1jfK0XZ4iU1Yhxel5JuXuQ_Afou32HmybN4wQqsEWNSedcyPOgHcXGvTdAyj/exec" method="post">
+                <input type="hidden" name="sheetName" value="Form5">
+                <div class="title">
+                    <h2>Customer Feedback Form</h2>
+                </div>
+                <div class="input-row">
+                    <input type="text" name="Name" placeholder="Enter your full name*">    
+                    <input type="email" name="Email" placeholder="Enter your email id*">
+                </div>
+                <table class="rating1"></table>
+                    <thead>
+                        <tr>
+                            <td>Ratings are classified as:</td> 
+                        </tr>
+                    </thead>
+                </table>
+                <h3>Implementation & Delivery (Softlabs)</h3>
+                <table class="rating2">
+                    <thead>
+                        <tr>
+                            <td style="width: 20%;">1</td>
+                            <td style="width: 20%;">2</td>
+                            <td style="width: 20%;">3</td>
+                            <td style="width: 20%;">4</td>
+                            <td style="width: 20%;">5</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Highly Dissatisfied</td>
+                            <td>Dissatisfied</td>
+                            <td>Neutral</td>
+                            <td>Satisfied</td>
+                            <td>Highly Satisfied</td>
+                        </tr>
+                        <tr>
+                            <td>Strongly Disagree</td>
+                            <td>Disagree</td>
+                            <td>Neutral</td>
+                            <td>Agree</td>
+                            <td>Strongly Agree</td>
+                        </tr>
+                        <tr>
+                            <td>Very Unlikely</td>
+                            <td>Unlikely</td>
+                            <td>Neutral</td>
+                            <td>Likely</td>
+                            <td>Very Likely</td>
+                        </tr>
+                        <tr>
+                            <td>Very Poor</td>
+                            <td>Poor</td>
+                            <td>Fair</td>
+                            <td>Good</td>
+                            <td>Excellent</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Questionnaire</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td style="width: 2%;"></td>
+                            <td style="width: 38%;">Questions</td>
+                            <td style="width: 8%;" class="center-text">1</td>
+                            <td style="width: 8%;" class="center-text">2</td>
+                            <td style="width: 8%;" class="center-text">3</td>
+                            <td style="width: 8%;" class="center-text">4</td>
+                            <td style="width: 8%;" class="center-text">5</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>How satisfied are you with the overall quality of the products and services provided by SoftLabs?</td>
+                            <td class="center-text"><input type="radio" name="Q1" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q1" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q1" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q1" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q1" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>How well do our products meet your operational needs in terms of performance and reliability?</td>
+                            <td class="center-text"><input type="radio" name="Q2" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q2" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q2" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q2" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q2" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>How satisfied are you with the responsiveness and effectiveness of our customer support team?</td>
+                            <td class="center-text"><input type="radio" name="Q3" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q3" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q3" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q3" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q3" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>How would you rate the ease of use and user-friendliness of our software solutions?</td>
+                            <td class="center-text"><input type="radio" name="Q4" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q4" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q4" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q4" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q4" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>How satisfied are you with the ability of our products to be customised to fit your specific needs?</td>
+                            <td class="center-text"><input type="radio" name="Q5" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q5" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q5" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q5" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q5" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>How satisfied are you with the training and educational resources provided to ensure the effective use of our products?</td>
+                            <td class="center-text"><input type="radio" name="Q6" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q6" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q6" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q6" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q6" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Considering the quality and range of services provided,how would you rate the value for money of our solutions?</td>
+                            <td class="center-text"><input type="radio" name="Q7" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q7" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q7" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q7" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q7" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>How satisfied are you with the process of implementing our solutions within your organisation?</td>
+                            <td class="center-text"><input type="radio" name="Q8" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q8" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q8" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q8" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q8" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>How confident are you in the security and compliance aspects of our software solutions?</td>
+                            <td class="center-text"><input type="radio" name="Q9" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q9" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q9" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q9" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q9" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>How likely are you to recommend SoftLabs products and services to other organizations?</td>
+                            <td class="center-text"><input type="radio" name="Q10" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q10" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q10" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q10" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q10" value="5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <!--###################Project Feedack###################################-->
+                <h3>Project Feedback</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td style="width: 2%;"></td>
+                            <td style="width: 38%;">Questions</td>
+                            <td style="width: 8%;" class="center-text">1</td>
+                            <td style="width: 8%;" class="center-text">2</td>
+                            <td style="width: 8%;" class="center-text">3</td>
+                            <td style="width: 8%;" class="center-text">4</td>
+                            <td style="width: 8%;" class="center-text">5</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>The Project was well Planned</td>
+                            <td class="center-text"><input type="radio" name="Q11" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q11" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q11" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q11" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q11" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Milestones were clearly defined</td>
+                            <td class="center-text"><input type="radio" name="Q12" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q12" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q12" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q12" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q12" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Project meetings were organised, and minutes managed</td>
+                            <td class="center-text"><input type="radio" name="Q13" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q13" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q13" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q13" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q13" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Communication throughout the Project was clearly defined and prompt</td>
+                            <td class="center-text"><input type="radio" name="Q14" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q14" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q14" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q14" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q14" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Quality and completeness of the project deliver1ables</td>
+                            <td class="center-text"><input type="radio" name="Q15" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q15" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q15" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q15" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q15" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Project milestones and deadlines met in a timely manner</td>
+                            <td class="center-text"><input type="radio" name="Q16" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q16" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q16" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q16" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q16" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Project was within the agreed-upon budget</td>1
+                            <td class="center-text"><input type="radio" name="Q17" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q17" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q17" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q17" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q17" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Were there any scope changes during the project1? If so, were they handled effectively</td>
+                            <td class="center-text"><input type="radio" name="Q18" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q18" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q18" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q18" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q18" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>How would you describe our collaboration and te1amwork during the project</td>
+                            <td class="center-text"><input type="radio" name="Q19" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q19" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q19" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q19" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q19" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Your suggestions and feedback were incorporated into the project development process effectively</td>
+                            <td class="center-text"><input type="radio" name="Q20" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q20" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q20" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q20" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q20" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>Adequate training and support was provided for project related systems or processes</td>
+                            <td class="center-text"><input type="radio" name="Q21" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q21" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q21" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q21" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q21" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>How satisfied are you with the process of implementing our solutions within your organisation</td>
+                            <td class="center-text"><input type="radio" name="Q22" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q22" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q22" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q22" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q22" value="5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text">
+                    <h4>Additional comments:</h4>
+                    <textarea id="comments" name="Comments" placeholder="Please provide any additional comments or suggestions..." rows="5" cols="90"></textarea>
+                </div>
+                 <!--###################Services Feedack###################################-->
+                 <h3>Services Feedback</h3>
+                 <table>
+                     <thead>
+                         <tr>
+                             <td style="width: 2%;"></td>
+                             <td style="width: 38%;">Questions</td>
+                             <td style="width: 8%;" class="center-text">1</td>
+                             <td style="width: 8%;" class="center-text">2</td>
+                             <td style="width: 8%;" class="center-text">3</td>
+                             <td style="width: 8%;" class="center-text">4</td>
+                             <td style="width: 8%;" class="center-text">5</td>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>1.</td>
+                             <td>How satisfied are you with the quality of our services</td>
+                             <td class="center-text"><input type="radio" name="Q23" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q23" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q23" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q23" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q23" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>2.</td>
+                             <td>Our team was attentive to your issues and responded on time</td>
+                             <td class="center-text"><input type="radio" name="Q24" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q24" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q24" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q24" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q24" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>3.</td>
+                             <td>Our team was knowledgeable and helpful</td>
+                             <td class="center-text"><input type="radio" name="Q25" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q25" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q25" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q25" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q25" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>4.</td>
+                             <td>Our team was polite and friendly</td>
+                             <td class="center-text"><input type="radio" name="Q26" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q26" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q26" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q26" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q26" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>5.</td>
+                             <td>Our team was easily approachable and available</td>
+                             <td class="center-text"><input type="radio" name="Q27" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q27" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q27" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q27" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q27" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>6.</td>
+                             <td>Our admin staff was helpful to resolve your invoices, SOW, and other transactional activities</td>
+                             <td class="center-text"><input type="radio" name="Q28" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q28" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q28" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q28" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q28" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>7.</td>
+                             <td>You are happy with the process of Onboarding and getting you adaptive to the new product</td>
+                             <td class="center-text"><input type="radio" name="Q29" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q29" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q29" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q29" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q29" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>8.</td>
+                             <td>Considering the quality and range of services provided, how would you rate the value for money of our solutions</td>
+                             <td class="center-text"><input type="radio" name="Q30" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q30" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q30" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q30" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q30" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>9.</td>
+                             <td>How satisfied are you with the training and educational resources provided to ensure the effective use of our products</td>
+                             <td class="center-text"><input type="radio" name="Q31" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q31" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q31" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q31" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q31" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>10.</td>
+                             <td>How satisfied are you with the responsiveness and effectiveness of our customer support team?</td>
+                             <td class="center-text"><input type="radio" name="Q32" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q32" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q32" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q32" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q32" value="5"></td>
+                         </tr>
+                         <tr>
+                             <td>11.</td>
+                             <td>How likely are you to recommend SoftLabs' products and services to other organizations?</td>
+                             <td class="center-text"><input type="radio" name="Q33" value="1"></td>
+                             <td class="center-text"><input type="radio" name="Q33" value="2"></td>
+                             <td class="center-text"><input type="radio" name="Q33" value="3"></td>
+                             <td class="center-text"><input type="radio" name="Q33" value="4"></td>
+                             <td class="center-text"><input type="radio" name="Q33" value="5"></td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 <div class="text">
+                     <h4>What did you enjoy most in our services?</h4>
+                     <textarea id="Comments2" name="Comments2" placeholder="Please provide any additional comments or suggestions..." rows="5" cols="90"></textarea>
+                 </div>
+                 <div class="text">
+                     <h4>What suggestions do you have for improving our customer service experience overall?</h4>
+                     <textarea id="Suggestions" name="Suggestions" placeholder="Please provide any additional comments or suggestions..." rows="5" cols="90"></textarea>
+                 </div>
+            <!--###################Product Feedack###################################-->
+                <h3>Product Feedback</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td style="width: 2%;"></td>
+                            <td style="width: 38%;">Questions</td>
+                            <td style="width: 8%;" class="center-text">1</td>
+                            <td style="width: 8%;" class="center-text">2</td>
+                            <td style="width: 8%;" class="center-text">3</td>
+                            <td style="width: 8%;" class="center-text">4</td>
+                            <td style="width: 8%;" class="center-text">5</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>The Product features fulfill 90% of your operation needs</td>
+                            <td class="center-text"><input type="radio" name="Q34" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q34" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q34" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q34" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q34" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>How do you rate the overall quality of Product?</td>
+                            <td class="center-text"><input type="radio" name="Q35" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q35" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q35" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q35" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q35" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>How do you rate the product on ease of use?</td>
+                            <td class="center-text"><input type="radio" name="Q36" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q36" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q36" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q36" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q36" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>How would you rate the performance of the product?</td>
+                            <td class="center-text"><input type="radio" name="Q37" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q37" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q37" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q37" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q37" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>How confident are you in the security and compliance aspects of our software solutions?</td>
+                            <td class="center-text"><input type="radio" name="Q38" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q38" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q38" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q38" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q38" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>How well do our products meet your operational needs in terms of performance and reliability?</td>
+                            <td class="center-text"><input type="radio" name="Q39" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q39" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q39" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q39" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q39" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>How satisfied are you with the ability of our products to be customised to fit your specific needs?</td>
+                            <td class="center-text"><input type="radio" name="Q40" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q40" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q40" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q40" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q40" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Considering the quality and range of services provided, how would you rate the value for money of our solutions</td>
+                            <td class="center-text"><input type="radio" name="Q41" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q41" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q41" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q41" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q41" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>How the product is compatible and integrated with other products</td>
+                            <td class="center-text"><input type="radio" name="Q42" value="1"></td>
+                            <td class="center-text"><input type="radio" name="Q42" value="2"></td>
+                            <td class="center-text"><input type="radio" name="Q42" value="3"></td>
+                            <td class="center-text"><input type="radio" name="Q42" value="4"></td>
+                            <td class="center-text"><input type="radio" name="Q42" value="5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text">
+                    <h4>What is the main benefit you receive from the product?</h4>
+                    <textarea id="benefits" name="Benefits" placeholder="Please provide any additional comments or suggestions..." rows="5" cols="90"></textarea>
+                </div>
+                <div class="text">
+                    <h4>What improvements would you like to see in the product?</h4>
+                    <textarea id="improvements" name="Improvements" placeholder="Please provide any additional comments or suggestions..." rows="5" cols="90"></textarea>
+                </div>
+ 
+                
+                <div style="text-align: center;">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="footer">
+                <div class="foot_text">
+                    <h4>**All rights reserved. Softlabs**</h4>
+                </div>
+            </div>
+        </div>
+        <div id="errorModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <p id="modalMessage"></p>
+            </div>
+        </div>
+        <div id="image-container">
+            <!-- The image will be dynamically added here -->
+        </div>        
+        <script src="form1.js"></script>
+        <div id="loadingOverlay" style="display: none;">
+            <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="Loading..." id="loadingImage" />
+        </div>        
+    </body>
+</html>

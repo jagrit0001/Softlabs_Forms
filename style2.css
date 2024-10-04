@@ -1,0 +1,188 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(195, 22%, 96%);
+    color: #001631;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    background: #cdcccc;
+    padding-top: 30px ;
+    padding-bottom: 370px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.header {
+    width: 69%;
+    margin: auto;
+    background-color: #02395e;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+.foot_text{
+    text-align: center;
+    padding-bottom: 0;
+}
+.footer {
+    width: 69%;
+    margin: auto;
+    background-color: #02395e;
+    text-align: center;
+    padding-bottom: 30px;
+
+    height: 25px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    padding-top: 70px; /* Add padding to move content down, so it's not hidden by the fixed header */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-row input[type="text"],
+.input-row input[type="date"],
+.input-row input[type="email"] {
+    background-color: white;
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 10px;
+}
+
+thead {
+    background-color: #02395e;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #02395e;
+    color: white;
+}
+
+tbody tr:hover {
+    color: #000000;
+    background-color: #8e9091;
+    transition: background-color 0.3s;
+}
+.rating2 th, .rating2 td {
+    border: 2px solid #000000;
+    padding: 10px;
+    background-color: #f0f0f0; /* Change to desired color */
+    color: #333; /* Change text color if needed */
+}
+.rating2 thead{
+    background-color: #343434;
+}
+.rating2 tbody tr:hover {
+    background-color: #bfbfbf; /* Change hover color */
+    color: #000; /* Change text color on hover if needed */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #02395e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 120px;
+    margin: 8px auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+textarea {
+    padding: 15px;
+    width: 97%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.feedback-message {
+    display: none;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+title {
+    background-color: #3bbf13;
+    color: #3498db;
+    border: #3bbf13;
+}
+#loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999; /* Ensure it appears on top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingImage {
+    width: 100px; /* Adjust the size of the loading image */
+    height: 100px;
+}
