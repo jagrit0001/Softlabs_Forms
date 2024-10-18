@@ -1,7 +1,9 @@
+/* Ensuring the page adjusts properly on different screen sizes */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Adjust font size for better readability on mobile */
 }
 
 body {
@@ -12,27 +14,29 @@ body {
     flex-direction: column;
 }
 
+/* Make the container responsive */
 .container {
-    width: 65%;
-    height: 100%;
+    width: 100%;
+    max-width: 700px; /* Limiting max width on larger screens */
     margin: auto;
     background: #cdcccc;
-    padding-top: 30px ;
-    padding-bottom: 370px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
 }
 
+/* Logo should scale down on smaller screens */
 .logo img {
     display: block;
     margin: 0 auto;
-    padding-top: 10px;
+    width: 100%; /* Make the logo responsive */
+    max-width: 400px; /* Set a max width to keep proportions */
 }
 
+/* Responsive header */
 .header {
-    width: 69%;
+    width: 100%;
+    max-width: 700px;
     margin: auto;
     background-color: #02395e;
     text-align: center;
@@ -41,62 +45,59 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: auto;
 }
-.foot_text{
-    text-align: center;
-    padding-bottom: 0;
-}
+
+/* Footer should adjust similarly to the header */
 .footer {
-    width: 69%;
+    width: 100%;
+    max-width: 700px;
     margin: auto;
     background-color: #02395e;
     text-align: center;
-    padding-bottom: 30px;
-
-    height: 25px;
+    padding-bottom: 15px;
+    height: auto;
     color: white;
 }
 
-h2 {
-    text-align: center;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    padding-top: 70px; /* Add padding to move content down, so it's not hidden by the fixed header */
-}
-
+/* Form fields should adjust for mobile */
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
+/* Make input fields take full width on mobile */
 .input-row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
+/* Input fields should expand to full width */
 .input-row input[type="text"],
-.input-row input[type="date"],
 .input-row input[type="email"] {
-    background-color: white;
-    width: 45%;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1em;
 }
 
+/* Responsive table - allow horizontal scrolling */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 30px;
+    overflow-x: auto;
+    display: block;
 }
 
+/* Adjust table cells for better readability on mobile */
 th, td {
     border: 2px solid #000000;
-    padding: 10px;
+    padding: 5px;
+    font-size: 14px;
 }
 
 thead {
@@ -105,30 +106,7 @@ thead {
     font-weight: bold;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #02395e;
-    color: white;
-}
-
-tbody tr:hover {
-    color: #000000;
-    background-color: #8e9091;
-    transition: background-color 0.3s;
-}
-.rating2 th, .rating2 td {
-    border: 2px solid #000000;
-    padding: 10px;
-    background-color: #f0f0f0; /* Change to desired color */
-    color: #333; /* Change text color if needed */
-}
-.rating2 thead{
-    background-color: #343434;
-}
-.rating2 tbody tr:hover {
-    background-color: #bfbfbf; /* Change hover color */
-    color: #000; /* Change text color on hover if needed */
-}
-
+/* Buttons should remain centered and responsive */
 button {
     padding: 10px 15px;
     background-color: #02395e;
@@ -138,51 +116,25 @@ button {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 120px;
+    width: 100%; /* Full width for buttons on mobile */
+    max-width: 150px; /* Limit size on larger screens */
     margin: 8px auto;
-    display: block;
 }
 
-button:hover {
-    background-color: #3498db;
-}
-
+/* Improve textarea responsiveness */
 textarea {
     padding: 15px;
-    width: 97%;
+    width: 100%;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1em;
     margin-bottom: 20px;
 }
 
-.feedback-message {
-    display: none;
-    text-align: center;
-    color: green;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-title {
-    background-color: #3bbf13;
-    color: #3498db;
-    border: #3bbf13;
-}
-#loadingOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 9999; /* Ensure it appears on top */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#loadingImage {
-    width: 100px; /* Adjust the size of the loading image */
-    height: 100px;
+/* Modal responsiveness */
+.modal-content {
+    width: 90%; /* Adjust the modal to fit on mobile */
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
 }
